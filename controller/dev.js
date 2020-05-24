@@ -11,7 +11,6 @@ class DevController {
   async createDev(req, res) {
     try {
       const result = await this.devService.createDev(req.body);
-      console.log(`result from insert ${result}`);
       res.status(201).json(result);
     } catch (err) {
       console.error(err);

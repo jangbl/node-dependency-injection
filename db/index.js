@@ -12,7 +12,5 @@ const db = knexjs({
   },
   pool: { min: 0, max: 10 },
 });
-console.log('db config');
-console.log(config.db);
 
 module.exports = db;

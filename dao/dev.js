@@ -4,12 +4,15 @@ class DevDao {
   }
 
   async createDev(email, firstName, middleNames, lastName) {
-    return this.db('developer').insert({
-      email,
-      first_name: firstName,
-      middle_names: middleNames,
-      last_name: lastName,
-    });
+    const [id] = await this.db('developer')
+      .insert({
+        email,
+        first_name: firstName,
+        middle_names: middleNames,
+        last_name: lastName,
+      })
+      .returning('id');
+    return id;
   }
 
   async getDev(id) {
