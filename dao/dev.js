@@ -3,10 +3,12 @@ class DevDao {
     this.db = db;
   }
 
-  async createDev(email, firstName) {
+  async createDev(email, firstName, middleNames, lastName) {
     return this.db('developer').insert({
       email,
       first_name: firstName,
+      middle_names: middleNames,
+      last_name: lastName,
     });
   }
 

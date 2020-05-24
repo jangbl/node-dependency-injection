@@ -4,6 +4,10 @@ class ApiError {
     this.code = code;
   }
 
+  static badRequest(msg) {
+    return new ApiError(400, msg);
+  }
+
   static notFound(msg) {
     return new ApiError(404, msg);
   }

@@ -1,4 +1,4 @@
-const ApiError = require('./ApiError');
+const ApiError = require('./api-error');
 
 function apiErrorHandler(err, req, res, next) {
   // in prod, don't use console.error

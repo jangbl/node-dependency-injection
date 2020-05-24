@@ -1,4 +1,4 @@
-const ApiError = require('../error/ApiError');
+const ApiError = require('../error/api-error');
 
 class DevController {
   constructor({ devService }) {
