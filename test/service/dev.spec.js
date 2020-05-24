@@ -1,8 +1,6 @@
 const assert = require('assert').strict;
-const config = require('../../config');
 const DevService = require('../../service/dev');
 
-console.log(config);
 describe('devService', () => {
   describe('sanitizes names', () => {
     const devService = new DevService({});
