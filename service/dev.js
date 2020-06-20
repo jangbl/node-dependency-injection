@@ -1,11 +1,9 @@
 /* eslint-disable class-methods-use-this */
-class DevService {
-  constructor({ devDao }) {
-    this.devDao = devDao;
-  }
+const devDao = require('../dao/dev');
 
+class DevService {
   getDev(id) {
-    return this.devDao.getDev(id);
+    return devDao.getDev(id);
   }
 
   createDev({ email, firstName, middleNames, lastName }) {
@@ -16,7 +14,7 @@ class DevService {
       lastName
     );
 
-    return this.devDao.createDev(email, fName, mNames, lName);
+    return devDao.createDev(email, fName, mNames, lName);
   }
 
   sanitizeNames(firstName, middleNameStr, lastName) {
@@ -45,4 +43,4 @@ class DevService {
   }
 }
 
-module.exports = DevService;
+module.exports = new DevService();

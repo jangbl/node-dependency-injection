@@ -1,8 +1,5 @@
 const express = require('express');
-const { setup } = require('./di-setup');
 const apiErrorHandler = require('./error/api-error-handler');
-
-setup();
 const router = require('./routes');
 
 class Server {
