@@ -8,7 +8,7 @@ This repository is part of the [Dependency Injection in Node](https://www.youtub
 
 [![Request body validation in Node](images/dependency-injection-in-node.png)](https://www.youtube.com/playlist?list=PL1Nml43UBm6ez_JKgCUpgkwfh9oQLjVmm)
 
-For updates, please reach out to [@productioncoder](https://twitter.com/productioncoder) on Twitter.
+For updates, please reach out to [@_jgoebel](https://twitter.com/_jgoebel) on Twitter.
 
 # How to run this application
 
